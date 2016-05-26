@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FunFacts" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FH0-jg-2PX">
+                                <rect key="frame" x="40" y="257" width="520" height="86"/>
+                                <string key="text">In the course of an average lifetime, while sleeping you might eat around 70 assorted insects and 10 spiders, or more In the course of an average lifetime, while sleeping you might eat around 70 assorted insects and 10 spiders, or more</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufu-Eb-RXT">
+                                <rect key="frame" x="40" y="480" width="520" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Q2u-9r-sGk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="tintColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Show Another Fun Fact"/>
+                                <connections>
+                                    <action selector="showFunFact" destination="BYZ-38-t0r" eventType="touchUpInside" id="2aG-4G-Wor"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did you know?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8pW-Fo-ujh">
+                                <rect key="frame" x="40" y="90" width="118" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.3529411764705882" green="0.73333333333333328" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="FH0-jg-2PX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Jh-DG-M2h"/>
+                            <constraint firstItem="FH0-jg-2PX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3LS-sC-UMq"/>
+                            <constraint firstItem="FH0-jg-2PX" firstAttribute="top" secondItem="8pW-Fo-ujh" secondAttribute="bottom" constant="145" id="9xq-9U-VvR"/>
+                            <constraint firstItem="FH0-jg-2PX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HIQ-MR-gV7"/>
+                            <constraint firstItem="8pW-Fo-ujh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="JGY-Je-txC"/>
+                            <constraint firstItem="8pW-Fo-ujh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="70" id="KTJ-iZ-VGD"/>
+                            <constraint firstItem="FH0-jg-2PX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="Mm6-9I-88p"/>
+                            <constraint firstItem="ufu-Eb-RXT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="Mmo-If-2BU"/>
+                            <constraint firstItem="FH0-jg-2PX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="UBl-V9-E0a"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ufu-Eb-RXT" secondAttribute="bottom" constant="80" id="ZIy-4I-Yqe"/>
+                            <constraint firstItem="8pW-Fo-ujh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="c3O-ym-qVz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FH0-jg-2PX" secondAttribute="trailing" constant="20" id="cTd-YY-hVO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FH0-jg-2PX" secondAttribute="trailing" constant="20" id="mci-eF-eAf"/>
+                            <constraint firstItem="FH0-jg-2PX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="pvs-p4-Lnf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ufu-Eb-RXT" secondAttribute="trailing" constant="20" id="trL-6H-wIX"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="JGY-Je-txC"/>
+                                <exclude reference="2Jh-DG-M2h"/>
+                                <exclude reference="9xq-9U-VvR"/>
+                                <exclude reference="Mm6-9I-88p"/>
+                                <exclude reference="UBl-V9-E0a"/>
+                                <exclude reference="mci-eF-eAf"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="funFactButton" destination="ufu-Eb-RXT" id="ycA-Y5-y5l"/>
+                        <outlet property="funFactLabel" destination="FH0-jg-2PX" id="9Jv-zZ-IMq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="390" y="386"/>
+        </scene>
+    </scenes>
+</document>
